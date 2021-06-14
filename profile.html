@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/green.png">
+        <title>Login - Farmers</title>
+        <link href="css/profile.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  rel="stylesheet" />
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body link="#babbbe" alink="#babbbe" vlink="#babbbe">
+        <header>
+            <div id="top-header">
+                <div id="top-header-content">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.png"/></a>
+                    </div>
+                    <div class="right-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><b>Thông tin</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>Hỗ trợ</b></a>
+                            </li>
+                            <li>
+                                <a href="#" id="search-item"><b><i class="fa fa-search"></b></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><b><i class="fa fa-comment"></b></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><b><i class="fa fa-user"></b></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="background">
+            <div class="backgr">
+               <img src="images/13903388683_4de6af3aff_o.jpg" alt="backgr" id="backgro">
+               
+               <input type="file" id="file">
+               <label for="file" class="change" ><i class="fa fa-camera"></i>Add Cover</label>
+            </div>
+           
+            <div class="avatarform">
+                <div class="avatars" >
+                    <img src="images/download.png" class="backgro2">
+                  
+                        <input type="file" id="file2" style="display: none;" class="file2">
+                        <label for="file2" class="change2"><i class="fa fa-camera" id="camera"></i></label>
+                  
+                  
+                </div>
+                <div class="info"> 
+                    <div>Bùi Minh Trong</div>
+                    <a href="trongbui22@gmail.com">Email: trongbui22@gmail.com</a>
+                    <div>SĐT :0934568234</div>
+                   
+                    
+                    <div >Mô tả</div>
+                </div>
+            </div>
+            <div class="bodyinfo">
+                <div class="left">
+                    <div class="c1">
+                        <div id="f1">
+                            <div class="duan">
+                                <div id="b1">Dự án</div>
+                                <button id="is">Thêm dự án</button>
+                            </div>
+                            <hr style="width:100%">
+                            <div>
+                                <div ><i class="fa fa-folder" id="icon"></i></div>
+                                Chưa có mục danh mục được thêm vào</div>
+                        </div>
+                       
+                    </div>
+                    <div class="c2" >
+                        <div id="f1">
+                            <div class="duan">
+                                <div id="b1">Kinh nghiệm</div>
+                                <button id="is1" onclick="FadeIn1('box1')">Thêm kinh nghiệm</button>
+                            </div>
+                            <hr style="width:100%">
+                            <div>Chưa có kinh nghiệm được thêm vào</div>
+                        </div>
+                        <div id="b22">
+                            <div >
+                                <div>
+                                    Tiêu đề
+                                    <input type="text" placeholder="Nhập vị trí của bạn">
+                                </div>
+                                <div>
+                                    Công ty
+                                    <input type="text" placeholder="Nhập tên công ty">
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <div>
+                                   Ngày bắt đầu
+                                    <input type="date" placeholder="Nhập vị trí của bạn">
+                                </div>
+                                <div>
+                                    Ngày kết thúc
+                                    <input type="date" placeholder="Nhập tên công ty">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    Tóm lược
+                                    <input type="text" placeholder="Mô tả kinh nghiệm công việc của bạn">
+                                </div>
+                            </div>
+                            <div>
+                                <button id="is1" onclick="FadeOut1('box1')" class="ketthuc">Kết thúc</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="c3" >
+                        <div id="f1">
+                            <div class="duan">
+                                <div id="b1">Học vấn</div>
+                                <button id="is2" onclick="FadeIn2('box2')">Thêm học vấn</button>
+                            </div>
+                            <hr style="width:100%">
+                            <div>Chưa có học vấn được thêm vào</div>
+                        </div>
+                        <div id="b23">
+                            
+                                <div>
+                                    <div>
+                                        Trường đại học/Cao đẳng
+                                        <input type="text" placeholder="Nhập trường Đại Học/Cao Đẳng">
+                                    </div>
+                                    <div>
+                                       Trình độ
+                                        <input type="text" placeholder="Nhập trình độ">
+                                    </div>
+                                </div>
+                               
+                                <div>
+                                    <div>
+                                       Ngày bắt đầu
+                                        <input type="date" placeholder="Nhập vị trí của bạn">
+                                    </div>
+                                    <div>
+                                        Ngày kết thúc
+                                        <input type="date" placeholder="Nhập tên công ty">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button id="is2" onclick="FadeOut2('box2')" class="ketthuc" >Kết thúc</button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                    <div class="c4" >
+                        <div id="f1">
+                            <div class="duan">
+                                <div id="b1">Bằng cấp</div>
+                                <button id="is3" onclick="FadeIn3('box3')">Thêm bằng cấp</button>
+                            </div>
+                            <hr style="width:100%">
+                            <div>Chưa có bằng cấp được thêm vào</div>
+                        </div>
+                        <div id="b24">
+                            <div>
+                                <div>Giấy chứng nhận hoặc Chứng chỉ
+                                    <input type="text" placeholder="Nhập trường Đại Học/Cao Đẳng">
+                                </div>
+                                <div>Đơn vị tổ chức
+                                    <input type="text" placeholder="Nhập đơn vị tổ chức">
+                                </div>
+                                <div>Tóm lược
+                                    <input type="text" placeholder="Nhập tóm lược">
+                                </div>
+                                <div>
+                                    Ngày bắt đầu
+                                     <input type="date" >
+                                 </div>
+                                 <div>
+                                    <button id="is3" onclick="FadeOut3('box3')" class="ketthuc" >Kết thúc</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="right">
+                    <div class="gr1">
+                        <div>
+                            <div class="duan">
+                                <div id="b1">Kỹ năng</div>
+                                <button onclick="FadeIn9('box2')">Tùy chỉnh</button>
+                            </div>
+                            <hr style="width:100%">
+                        </div>
+                        <p class="Single" target="1">Logo & Brand Identity</p>
+                        <p class="Single" target="2">Web & App Design</p>
+                        <p class="Single" target="3">Video & Animation</p>
+                        <p class="Single" target="4">Writing & Translation</p>
+                        <p class="Single" target="5">Digital Marketing</p>
+                        
+                    </div>
+                    <div class="gr2">
+                        <div>
+                            <div class="duan">
+                                <div id="b1">Kỹ năng tương tự</div>
+                                
+                            </div>
+                            <hr style="width:100%">
+                            
+                        </div>
+                        <div id="div1"  class="target">
+                            <p class="animate__animated animate__flipInX" >Logo Design</p>
+                            <p class="animate__animated animate__flipInX">Brand Style Guides</p>
+                            <p class="animate__animated animate__flipInX">Business Cards & Stationery</p>
+                           
+                        </div>
+                        <div id="div2"  class="target" >
+                            <p class="animate__animated animate__flipInX" >Web Banners</p>
+                            <p class="animate__animated animate__flipInX">Icon Design</p>
+                            <p class="animate__animated animate__flipInX">App Design</p>
+                            <p class="animate__animated animate__flipInX">Email Design</p>
+                        </div>
+                        <div id="div3"  class="target ">
+                            <p class="animate__animated animate__flipInX">Video Editing</p>
+                            <p class="animate__animated animate__flipInX">Short Video Ads</p>
+                            <p class="animate__animated animate__flipInX">Logo Animation</p>
+                            <p class="animate__animated animate__flipInX">Subtitles & Captions</p>
+                           
+                        </div>
+                        <div id="div4"  class="target ">
+                            <p class="animate__animated animate__flipInX">Translation</p>
+                            <p class="animate__animated animate__flipInX">Scriptwriting</p>
+                            <p class="animate__animated animate__flipInX">Website Content</p>
+                            <p class="animate__animated animate__flipInX">Technical Writing</p>
+                            <p class="animate__animated animate__flipInX">LinkedIn Profiles</p>
+                        </div>
+                        <div id="div5"  class="target">
+                            <p class="animate__animated animate__flipInX">Marketing Strategy</p>
+                            <p class="animate__animated animate__flipInX">Local SEO</p>
+                            <p class="animate__animated animate__flipInX">Video Marketing</p>
+                            <p class="animate__animated animate__flipInX">Web Analytics</p>
+                            <p class="animate__animated animate__flipInX">Mobile App Marketing</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="gr3" >
+                        <div>
+                            <div class="duan">
+                                <div id="b1">Tiến triển dự án</div>
+                                
+                            </div>
+                            <hr style="width:100%">
+                            
+                        </div>
+                        <div class="Logodss" >
+                            <div style="font-size: 15px;">Công việc 1
+                               <div class="cv1"><div class="cv11"></div></div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: 670;">Công việc 2
+                                <div class="cv2"><div class="cv21"></div></div>
+                            </div>
+                            <div style="font-size: 15px;font-weight: 670;">Công việc 3
+                                <div class="cv3"><div class="cv31"></div></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="button">
+                   <div class="icon">
+                      <i class="fa fa-facebook-f"></i>
+                   </div>
+                   <span>Facebook</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <i class="fa fa-twitter"></i>
+                   </div>
+                   <span>Twitter</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <i class="fa fa-instagram"></i>
+                   </div>
+                   <span>Instagram</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <i class="fa fa-github"></i>
+                   </div>
+                   <span>Github</span>
+                </div>
+                <div class="button">
+                   <div class="icon">
+                      <i class="fa fa-youtube"></i>
+                   </div>
+                   <span>YouTube</span>
+                </div>
+             </div>
+        </section>
+        <footer>
+            <div class="social">
+                <label>Kết Nối Với Chúng Tôi</label>
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-github"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="">
+
+            </div>
+            <div class="main-footer">
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <h4 style="display: inline-block;">Địa Chỉ</h4>
+                            <p>371 Nguyễn Kiệm phường 3 Gò Vấp TP.HCM</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-square"></i>
+                            <h4 style="display: inline-block;">Số Điện Thoại</h4>
+                            <p>0339141598</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <h4 style="display: inline-block;">EMail</h4>
+                            <p>anhhungcodon@gmai.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label>GIỜ LÀM VIỆC</label>
+                    <ul>
+                        <li>Monday: 09:00-17:00</li>
+                        <li>Tuesday: 09:00-17:00</li>
+                        <li>Wednesday: 09:00-17:00</li>
+                        <li>Thursday: 09:00-17:00</li>
+                        <li>Friday: 09:00-17:00</li>
+                        <li>Saturday: 09:00-17:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <label>VỀ CHÚNG TÔI</label>
+                     <ul>
+                         <li><a href="">Giới thiệu</a></li>
+                         <li><a href="">Liên hệ</a></li>
+                         <li><a href="">Tuyển dụng</a></li>
+                         <li><a href="">Tin tức</a></li>
+                         <li><a href="">Chính sách bảo mật</a></li>
+                     </ul>
+                 </div>
+                 <div>
+                     <label>ĐĂNG KÍ NHẬN TIN</label>
+                     <span style="display: block;padding-top: 10px">
+                        Chúng tôi sẽ gửi những thông báo mới nhất cho bạn về những ưu đãi hoặc các sự kiện đặc biệt
+                        <div class="email">
+                            <input type="email" placeholder="Nhập email của bạn"/>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                     </span>
+                 </div>
+            </div>
+            <div class="end-footer">
+                <div class="wrapper-end-footer">
+                    <span>FARMERS</span>
+                    <span>&#169; Farmer Company 2021</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/profile.js" ></script>
+    </body>
+    
+</html>

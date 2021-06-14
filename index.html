@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tên Web</title>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/footer.css"/>
+        <!--awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <!--carousel-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--slick slider-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+        <link rel="stylesheet" href="css/slick-slide.css" />
+        <!--<link rel="shortcut icon" href="images/logo.png"/>
+        <meta name="viewport" content="width=device-width"> -->
+    </head>
+    <body>
+        <header>
+            <div id="top-header">
+                <div id="top-header-content">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.png"/></a>
+                    </div>
+                    <div class="right-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><b>YÊU CẦU</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>SẢN PHẨM</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>THÔNG TIN</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>HỖ TRỢ</b></a>
+                            </li>
+                            <li>
+                                <a href="#" id="search-item"><b><i class="fas fa-search"></b></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><b><i class="fas fa-comment"></b></i></a>
+                            </li>
+                            <li style="position: relative;" class="user">
+                                <a href="#"><b><i class="fas fa-user"></b></i></a>
+                                <div class="sub-user">
+                                    <a href="login.html">Đăng nhập/Đăng kí</a>
+                                    <a href="#">Hồ sơ người dùng</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-popup">
+            <div class="search-content">
+                <h2 style="padding-bottom: 20px;">Bạn Cần Gì?</h2>
+                <div class="search-bar">
+                    <form action="" role="search" id="search" method="GET">
+                        <div class="search-inner">
+                            <input type="hidden" name="controller" value="homepage">
+                            <input type="text" name="key" placeholder="something..." required/>
+                            <button type="submit" class="search-btn" name="search"><i class="fas fa-search"></i></button>
+                        </div>
+                        <input type="hidden" name="action" value="search"/>
+                    </form>
+                </div>
+                <div class="popular">
+                    <form action="" role="search-popular" id="search-popular" method="GET">
+                        <button type="submit" name="action">Edit Video</button>
+                        <button type="submit" name="action">PhotoShop</button>
+                        <button type="submit" name="action">Web Design</button>
+                        <button type="submit" name="action">Logo Design</button>
+                    </form>
+                </div>
+            </div>
+            <i class="fas fa-times close-search"></i>
+        </div>
+        <div style="height: 80px;">
+        </div>
+        <div class="sub-bar">
+            <ul>
+                <li><a href="logodesign.html">Logo Design</a></li>
+                <li><a href="editvideo.html">Video Editing</a></li>
+                <li><a href="">Photoshop Images</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Web Design</a></li>
+                <li><a href="">Gaming</a></li>
+                <li><a href="">Writing</a></li>
+                <li><a href="">Student</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">Translation</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="nav-inner">
+                <div class="main-header-content">
+                    <div>
+                        <h1>Kết Nối Giá Trị<br>Vươn Tầm Tương Lai</h1>
+                        <a href="request.html">Đăng Yêu Cầu</a>
+                        <a href="#">Đăng Sản Phẩm</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="sliders">
+                        <div id="slider-animation" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                                <li data-target="#slider-animation" data-slide-to="0" class="active"></li>
+                                <li data-target="#slider-animation" data-slide-to="1"></li>
+                                <li data-target="#slider-animation" data-slide-to="2"></li>
+                            </ul>
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="images/logo-design.jpg" alt="Logo Design">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/video-editing.jpg" alt="Video Editing">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="images/web-design.jpg" alt="Web-Design">
+                                </div>
+                            </div>
+                            
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="services">
+                <h1>Dịch Vụ</h1>
+                <div class="service-container">
+                    <div>
+                        <a href="logodesign.html"><i class="fas fa-pencil-ruler"></i></a>
+                        <h5>Logo Design</h5>
+                    </div>
+                    <div>
+                        <a href="editvideo.html"><i class="fas fa-photo-video"></i></a>
+                        <h5>Video Editing</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="far fa-images"></i></a>
+                        <h5>Photoshop Images</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fab fa-itunes"></i></a>
+                        <h5>Music</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-laptop-code"></i></a>
+                        <h5>Web Design</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-gamepad"></i></a>
+                        <h5>Gaming</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-newspaper"></i></a>
+                        <h5>Writing</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-user-graduate"></i></a>
+                        <h5>Student</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="far fa-file-code"></i></a>
+                        <h5>Coding</h5>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-language"></i></a>
+                        <h5>Translation</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-1">
+                <div class="image-banner-1">
+                    <img src="images/web-design-concepts-with-blurred-background.jpg"/>
+                </div>
+                <div class="content-banner-1">
+                    <h1>Môi trường việc làm đa dạng</h1>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Tạo dựng các quan hệ xã hội</h4>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Kiếm thêm thu nhập cho sinh viên</h4>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Sử dụng đúng năng lực bản thân</h4>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> An toàn lành mạnh, dễ sử dụng</h4>
+                    <br>
+                    <a class="up-product" href="#">Đăng Sản Phẩm</a>
+                </div>
+            </div>
+            <div class="popular-product">
+                <div style="display: flex;">
+                    <h1 style="display: inline;">Sản Phẩm Nổi Bật</h1>
+                    <a href="#" style="display: inline;margin-left: auto;"><h6 style="line-height: 50px;">See More Product</h6></a>
+                </div>
+                <div class="product-sliders"> 
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product1.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product2.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product3.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product4.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product1.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product4.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product3.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product2.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product4.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#"><img src="images/product1.jpg"/></a>
+                        </div>
+                        <h6 class="thumnail">
+                            <b>Tên Sản Phẩm</b>
+                            <b style="font-size: 13px;color: #85878a;">by Tác giả</b>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="requirements">
+                <div style="display: flex;">
+                    <h1 style="display: inline;">Yêu Cầu Khách Hàng</h1>
+                    <a href="#" style="display: inline;margin-left: auto;"><h6 style="line-height: 50px;">See More Requirement</h6></a>
+                </div>
+                <div class="requirement-sliders"> 
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product1.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product2.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product3.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product4.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product1.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product4.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product2.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product3.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product4.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                    <div class="requirement">
+                        <div class="requirement-img">
+                            <a href="#"><img src="images/product1.jpg"/></a>
+                        </div>
+                        <div class="thumnail" style="height: 40%;">
+                            <div>
+                            <b>Customer: ABC</b>
+                            <br>
+                            <b>Description: </b>
+                            <h6 style="display: inline; font-size: 15px;"></h6>
+                            </div>
+                            <i style="font-size: 15px;color: #85878a;">Price: 20000 VNĐ</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-2">
+                <div class="content-banner-2">
+                    <h1>Đa dạng đối tượng khách hàng</h1>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Phân khúc khách hàng vừa và thấp</h4>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Giá cả hợp lý</h4>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Chủ động thời gian, giá cả</h4>
+                    <br>
+                    <h4><i class="far fa-dot-circle"></i> Chủ động tìm kiếm đối tượng</h4>
+                    <br>
+                    <a class="up-request" href="#">Đăng Yêu Cầu</a>
+                </div>
+                <div class="image-banner-2">
+                    <img src="images/web-design-concepts-with-blurred-background.jpg"/>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="social">
+                <label>Kết Nối Với Chúng Tôi</label>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="">
+
+            </div>
+            <div class="main-footer">
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <h4 style="display: inline-block;">Địa Chỉ</h4>
+                            <p>891/60/8 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP.HCM</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-square"></i>
+                            <h4 style="display: inline-block;">Số Điện Thoại</h4>
+                            <p>0339141598</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <h4 style="display: inline-block;">EMail</h4>
+                            <p>trieu251101@gmai.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label>GIỜ LÀM VIỆC</label>
+                    <ul>
+                        <li>Monday: 09:00-17:00</li>
+                        <li>Tuesday: 09:00-17:00</li>
+                        <li>Wednesday: 09:00-17:00</li>
+                        <li>Thursday: 09:00-17:00</li>
+                        <li>Friday: 09:00-17:00</li>
+                        <li>Saturday: 09:00-17:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <label>VỀ CHÚNG TÔI</label>
+                     <ul>
+                         <li><a href="">Giới thiệu</a></li>
+                         <li><a href="">Liên hệ</a></li>
+                         <li><a href="">Tuyển dụng</a></li>
+                         <li><a href="">Tin tức</a></li>
+                         <li><a href="">Chính sách bảo mật</a></li>
+                     </ul>
+                 </div>
+                 <div>
+                     <label>ĐĂNG KÍ NHẬN TIN</label>
+                     <span style="display: block;padding-top: 10px">
+                        Chúng tôi sẽ gửi những thông báo mới nhất cho bạn về những ưu đãi hoặc các sự kiện đặc biệt
+                        <div class="email">
+                            <input type="email" placeholder="Nhập email của bạn"/>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                     </span>
+                 </div>
+            </div>
+            <div class="end-footer">
+                <div class="wrapper-end-footer">
+                    <span>FARMERS</span>
+                    <span>&#169; Farmer Company 2021</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/slick-slide.js"></script>

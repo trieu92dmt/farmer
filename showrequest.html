@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tên Web</title>
+        <link rel="stylesheet" href="css/header.css"/>
+        <link rel="stylesheet" href="css/subbar.css"/>
+        <link rel="stylesheet" href="css/chatbox.css"/>
+        <link rel="stylesheet" href="css/showrequest.css"/>
+        <!--awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <!--carousel-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--slick slider-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+        <link rel="stylesheet" href="css/slick-slide.css" />
+        <!--<link rel="shortcut icon" href="images/logo.png"/>
+        <meta name="viewport" content="width=device-width"> -->
+    </head>
+    <body>
+        <header>
+            <div id="top-header">
+                <div id="top-header-content">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.png   "/></a>
+                    </div>
+                    <div class="right-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><b>THÔNG TIN</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>HỖ TRỢ</b></a>
+                            </li>
+                            <li>
+                                <a href="#" id="search-item"><b><i class="fas fa-search"></b></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><b><i class="fas fa-comment"></b></i></a>
+                            </li>
+                            <li style="position: relative;" class="user">
+                                <a href="#"><b><i class="fas fa-user"></b></i></a>
+                                <div class="sub-user">
+                                    <a href="login.html">Đăng nhập/Đăng kí</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-popup">
+            <div class="search-content">
+                <h2 style="padding-bottom: 20px;">Bạn Cần Gì?</h2>
+                <div class="search-bar">
+                    <form action="" role="search" id="search" method="GET">
+                        <div class="search-inner">
+                            <input type="hidden" name="controller" value="homepage">
+                            <input type="text" name="key" placeholder="something..." required/>
+                            <button type="submit" class="search-btn" name="search"><i class="fas fa-search"></i></button>
+                        </div>
+                        <input type="hidden" name="action" value="search"/>
+                    </form>
+                </div>
+                <div class="popular">
+                    <form action="" role="search-popular" id="search-popular" method="GET">
+                        <button type="submit" name="action">Edit Video</button>
+                        <button type="submit" name="action">PhotoShop</button>
+                        <button type="submit" name="action">Web Design</button>
+                        <button type="submit" name="action">Logo Design</button>
+                    </form>
+                </div>
+            </div>
+            <i class="fas fa-times close-search"></i>
+        </div>
+        <div class="sub-bar">
+            <ul>
+                <li><a href="logodesign.html">Logo Design</a></li>
+                <li><a href="">Video Editing</a></li>
+                <li><a href="">Photoshop Images</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Web Design</a></li>
+                <li><a href="">Gaming</a></li>
+                <li><a href="">Writing</a></li>
+                <li><a href="">Student</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">Translation</a></li>
+            </ul>
+        </div>
+        <h1 class="main-label">Yêu Cầu Khách Hàng</h1>
+        <section>
+            <div class="left-content">
+                <div class="category">
+                    <label>Lĩnh vực</label>
+                    <ul class="list">
+                        <li><a href="">Logo Desgin</a></li>
+                        <li><a href="">Video Editing</a></li>
+                        <li><a href="">Photoshop Images</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">Web Design</a></li>
+                        <li><a href="">Writting</a></li>
+                        <li><a href="">Gaming</a></li>
+                        <li><a href="">Student</a></li>
+                        <li><a href="">Coding</a></li>
+                        <li><a href="">Translation</a></li>
+                    </ul>
+                </div>
+                <div class="rent-cost">
+                    <form>
+                        <label>Tiền công</label>
+                        <div>
+                            <a href=""><input type="radio" name="cost" checked/><span>Tất cả </span></a>
+                            <a href=""><input type="radio" name="cost"/><span>100.000VND - 200.000VND</span></a>
+                            <a href=""><input type="radio" name="cost"/><span>200.000VND - 500.000VND</span></a>
+                            <a href=""><input type="radio" name="cost"/><span>> 500.000VND</span></a>
+                        </div>
+                        <div>
+                            <a href=""><input type="radio" name="sort" checked/> Thấp đến cao</a>
+                            <a href=""><input type="radio" name="sort"/> Cao đến thấp</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-content">
+                <ul class="top">
+                    <li class="menu active">Mới nhất</li>
+                    <li class="menu">Được quan tâm</li>
+                    <li>
+                        <div class="s131">
+                            <form>
+                              <div class="inner-form">
+                                <div class="input-field first-wrap">
+                                  <input id="search" type="text" placeholder="Tìm kiếm..." />
+                                </div>
+                                <div class="input-field second-wrap">
+                                  <button class="btn-search" type="button">SEARCH</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                    </li>
+                </ul>
+                <div class="main-content">
+                    <ul>
+                        <li class="request-item">
+                            <div class="info-user">
+                                <div>
+                                    <img src="images/kim.jpg"/>
+                                    <span class="username"><a href=""><b>kimsohyun</b></a></span>
+                                </div>
+                                <div class="tools">
+                                    <span title="Báo cáo"><i class="fas fa-exclamation-triangle"></i></span>
+                                    <span title="Lưu"><i class="fas fa-bookmark"></i></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                Chào các bạn , bên mình chuỗi xe bán hàng mì trộn , bánh mì ,đồ ăn vặt ....
+                                Hiện tại mình cần 1 bạn thiết kế logo mì trộn và banner cho 3 mặt của xe bán hàng nhỏ (82cm*97cm)
+                                Mình là công ty khởi nghiệp nên...
+                                <a href="">xem thêm</a>
+                            </div>
+                            <div class="bottom">
+                                <a class="cate" href="">Logo Design</a>
+                                <span>Tiền thuê: <span>100.000VND</span></span>
+                            </div>
+                        </li>
+                        <li class="request-item">
+                            <div class="info-user">
+                                <div>
+                                    <img src="images/kim.jpg"/>
+                                    <span class="username"><a href=""><b>kimsohyun</b></a></span>
+                                </div>
+                                <div class="tools">
+                                    <span title="Báo cáo"><i class="fas fa-exclamation-triangle"></i></span>
+                                    <span title="Lưu"><i class="fas fa-bookmark"></i></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                Chào các bạn , bên mình chuỗi xe bán hàng mì trộn , bánh mì ,đồ ăn vặt ....
+                                Hiện tại mình cần 1 bạn thiết kế logo mì trộn và banner cho 3 mặt của xe bán hàng nhỏ (82cm*97cm)
+                                Mình là công ty khởi nghiệp nên...
+                                <a href="">xem thêm</a>
+                            </div>
+                            <div class="bottom">
+                                <a class="cate" href="">Logo Design</a>
+                                <span>Tiền thuê: <span>100.000VND</span></span>
+                            </div>
+                        </li>
+                        <li class="request-item">
+                            <div class="info-user">
+                                <div>
+                                    <img src="images/kim.jpg"/>
+                                    <span class="username"><a href=""><b>kimsohyun</b></a></span>
+                                </div>
+                                <div class="tools">
+                                    <span title="Báo cáo"><i class="fas fa-exclamation-triangle"></i></span>
+                                    <span title="Lưu"><i class="fas fa-bookmark"></i></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                Chào các bạn , bên mình chuỗi xe bán hàng mì trộn , bánh mì ,đồ ăn vặt ....
+                                Hiện tại mình cần 1 bạn thiết kế logo mì trộn và banner cho 3 mặt của xe bán hàng nhỏ (82cm*97cm)
+                                Mình là công ty khởi nghiệp nên...
+                                <a href="">xem thêm</a>
+                            </div>
+                            <div class="bottom">
+                                <a class="cate" href="">Logo Design</a>
+                                <span>Tiền thuê: <span>100.000VND</span></span>
+                            </div>
+                        </li>
+                        <li class="request-item">
+                            <div class="info-user">
+                                <div>
+                                    <img src="images/kim.jpg"/>
+                                    <span class="username"><a href=""><b>kimsohyun</b></a></span>
+                                </div>
+                                <div class="tools">
+                                    <span title="Báo cáo"><i class="fas fa-exclamation-triangle"></i></span>
+                                    <span title="Lưu"><i class="fas fa-bookmark"></i></span>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                Chào các bạn , bên mình chuỗi xe bán hàng mì trộn , bánh mì ,đồ ăn vặt ....
+                                Hiện tại mình cần 1 bạn thiết kế logo mì trộn và banner cho 3 mặt của xe bán hàng nhỏ (82cm*97cm)
+                                Mình là công ty khởi nghiệp nên...
+                                <a href="">xem thêm</a>
+                            </div>
+                            <div class="bottom">
+                                <a class="cate" href="">Logo Design</a>
+                                <span>Tiền thuê: <span>100.000VND</span></span>
+                            </div>
+                        </li> 
+                    </ul>
+                    <nav aria-label="Page navigation example" style="margin-right: 20px;">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/product.js"></script>
+        <script src="js/header.js"></script>
+        <script src="js/showrequest.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/slick-slide.js"></script>
+    </body>
+</html>

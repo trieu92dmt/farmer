@@ -1,0 +1,199 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    border-bottom: 1px white solid;
+    transition: all 0.5s ease-in-out;
+    background-color: #035230;
+}
+#top-header{
+    top: 0;
+    width: 100%;
+    height: 80px; 
+}
+#top-header-content{
+    margin:0 60px 0 60px;
+    height: 100%;
+    display: flex;
+}
+.icon{
+    position: relative;
+    height: 85%;
+    width: 200px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.icon > a{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 200px;
+    border-radius: 20px;
+    margin: auto;
+}
+.icon > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.right-menu{
+    width: fit-content;
+    margin-left: auto;
+    height: 100%;   
+}
+.right-menu > ul
+{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.right-menu > ul > li{
+    text-align: right;
+    width: fit-content;
+    display: inline-block;
+    height: fit-content;
+    padding: 8px 15px 8px 15px;
+}
+.right-menu > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.right-menu > ul > li:hover{
+    border-radius: 30px;
+    background-color: white;
+}
+.right-menu > ul > li:hover >a{
+    color: #035230;
+}
+/********************/
+.user:hover .sub-user{
+    visibility: visible;
+}
+.sub-user{
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    top: 70%;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 4px 10px -2px rgb(0 0 0 / 20%);
+}
+.sub-user a{
+    color: black;
+    cursor: pointer;
+}
+.sub-user a:hover{
+    text-decoration: none;
+}
+/*-----------------------------------------*/
+/**********************/
+.search-popup{
+    position: absolute;
+    top: 0;
+    background-color: #2b2828ad;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+}
+.search-content{
+    top: 100px;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    padding-top: 50px;
+    color: white;
+}
+form[role="search"]{
+    position: relative;
+    width: 80%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 30px;
+}
+.search-inner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+input[name="key"]{
+    width: 80%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}
+.search-btn{
+    border: 0;
+    position: absolute;
+    outline: 0;
+    top: 10%;
+    left: 15px;
+    max-width: 50px;
+    height: 80%;
+    font-size: 20px;
+    background-color: white;
+}
+.search-btn:focus{
+    outline: 0;
+}
+.close-search{
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+}
+
+/*-----------------------------------------*/
+.popular button{
+    padding: 5px 8px 5px 8px;
+    margin: 12px;
+    border: 1px solid #1dbf73;
+    outline: 0;
+    border-radius: 30px;
+    background-color: #1dbf73;
+    color: white;
+    font-size: 13px;
+}
+.popular button:hover{
+    border: 1px solid #1dbf73;
+    background-color: white;
+    color: #1dbf73;
+    outline: 0;
+}
+.popular button:focus{
+    outline: none;
+}

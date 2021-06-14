@@ -1,0 +1,29 @@
+.sub-bar{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    z-index: 990;
+}
+.sub-bar > ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: 0;
+}
+.sub-bar > ul li{
+    width: fit-content;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.sub-bar > ul li > a{
+    color: #62646a;
+    text-decoration: none;
+    line-height: 40px;
+}
+.sub-bar >ul li:hover{
+    border-bottom: 2px solid #1dbf73;
+}

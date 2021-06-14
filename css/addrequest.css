@@ -1,0 +1,264 @@
+section{
+    background-color: #EFEFEF;
+    height: fit-content;
+}
+.lable-1{
+    padding-top: 40px;
+    text-align: center;
+}
+.lable-2{
+    display: block;
+    margin-bottom: 10px;
+}
+.request-form{
+    background-color: white;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}.request-form textarea{
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+}
+.request-form b{
+    display: block;
+}
+.dandex-reviews label{
+    background-color: #EFEFEF;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.dandev-reviews {
+    position: relative;
+    margin: 20px 0;
+}
+
+.dandev-reviews .form_upload>label {
+    height: 35px;
+    width: 160px;
+    display: block;
+    cursor: pointer;
+}
+
+.dandev-reviews .form_upload label span {
+    display: inline-block;
+    background: url(images/camera.png) no-repeat;
+    background-size: 23px 20px;
+}
+
+.list_attach {
+    display: block;
+}
+
+ul.dandev_attach_view {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.dandev_attach_view li {
+    float: left;
+    width: 80px;
+    margin: 0 20px 20px 0 !important;
+    padding: 0!important;
+    border: 0!important;
+    overflow: inherit;
+    clear: none;
+}
+
+ul.dandev_attach_view .img-wrap {
+    position: relative;
+}
+
+ul.dandev_attach_view .img-wrap .close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: #000;
+    color: #fff!important;
+    border-radius: 50%;
+    z-index: 2;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer!important;
+    opacity: 1!important;
+    text-shadow: none;
+}
+
+ul.dandev_attach_view li.li_file_hide {
+    opacity: 0;
+    visibility: visible;
+    width: 0!important;
+    height: 0!important;
+    overflow: hidden;
+    margin: 0!important;
+}
+
+ul.dandev_attach_view .img-wrap-box {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+    height: auto;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.img-wrap-box img {
+    right: 0;
+    width: 100%!important;
+    height: 100%!important;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    object-position: 50% 50%;
+    object-fit: cover;
+    transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+}
+
+ul li,
+ol li {
+    list-style-position: inside;
+}
+
+.list_attach span.dandev_insert_attach {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    border: 2px dashed #ccc;
+    line-height: 76px;
+    font-size: 25px;
+    color: #ccc;
+    display: none;
+    cursor: pointer;
+}
+
+ul.dandev_attach_view {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.dandev_attach_view .img-wrap {
+    position: relative;
+}
+
+.list_attach.show-btn span.dandev_insert_attach {
+    display: inline-block;
+}
+
+i.dandev-plus {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 1;
+}
+
+ul.dandev_attach_view li input {
+    display: none;
+}
+/*input[type="file"]{
+    display: none;
+}
+/**/
+.wrapper-select{
+    width: 45%;
+    margin-top: 10px;
+}
+/*............................*/
+.time-option{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #EFEFEF;
+}
+.time-option div{
+    width: 25%;
+    border: 1px solid #EFEFEF;
+}
+.time-option div>button:hover{
+    background-color: #EFEFEF;
+}
+.time-option div>input:hover{
+    background-color: #EFEFEF;
+}
+.time-option div > button{
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    background-color: white;
+}
+.time-option div > button:focus{
+    outline: 0;
+}
+input[type="number"]{
+    padding: 10px;
+    border: 0;
+    width: 100%;
+    outline: 0;
+    text-align: center;
+}
+input[type="number"]:focus{
+    outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.active{
+    background-color: #EFEFEF !important;
+}
+/*********************/
+.time-remain{
+    padding-top: 20px;
+}
+.time-remain b{
+    padding-bottom: 20px;
+}
+.price-container{
+    padding-top: 20px;
+}
+.price-container b{
+    padding-bottom: 20px;
+}
+.price{
+    border: 1px solid #EFEFEF !important;
+}
+button[name="post-request"]{
+    color: white;
+    background-color: #1dbf73;
+    border: 0;
+    outline: 0;
+    padding: 5px 10px;
+    margin-left: auto;
+    margin-top: 20px;
+    display: block;
+}
+button[name="post-request"]:focus{
+    border: 0;
+    outline: 0;
+}
+footer{
+    margin: 0 !important;
+}
+/*..............................*/
+.title{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}

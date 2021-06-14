@@ -1,0 +1,334 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.main-content{
+    width: 60%;
+}
+.seller{
+    display: flex;
+    line-height: 40px;
+    width: 100%;
+}
+.icon-user{
+    display: block;
+    width: 5%;
+    height: 5%;
+    padding-right: 10px;
+}
+.name{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+.seller span{
+    display: block;
+}
+/*.........................*/
+section{
+    margin: 50px 80px;
+}
+h1,h2{
+    padding-bottom: 20px;
+}
+/*..........................*/
+.image-show{
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(113, 163, 159);
+}
+.slick-list{
+    height: 100%;
+}
+.slick-track{
+    height: 100%;
+}
+.image-show img{
+    height: 100%;
+}
+/*..............................*/
+.thumbnails{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow-x: hidden;
+}
+.thumbnails::-webkit-scrollbar{
+    display: none;
+}
+.thumbnail-container{
+    height: 100%;
+    display: inline-flex;
+    transition: transform .3s ease-in-out;
+}
+.thumbnail-container div{
+    width: 100px;
+    height: 100%;
+    padding-right: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.thumbnail-container div > img{
+    width: 100%;
+    height: 100%;
+}
+.prev-btn, .next-btn{
+    line-height: 60px;
+    position: absolute;
+    z-index: 2;
+    height: 60px;
+    width: 20px;
+    text-align: center;
+    background-color: white;
+    opacity: 0.9;
+    font-weight: bold;
+    cursor: pointer;
+}
+.next-btn{
+    right: 0;
+}
+/************************/
+.click{
+    opacity: 1 !important;
+}
+/***********************/
+.requirements{
+    height: 550px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.requirement-sliders{
+    padding: 0 0 10px 0;
+}
+.requirement{
+    text-align: center;
+    height: 400px !important;
+    margin: 0 15px;
+    border: 1px solid rgb(88, 86, 86);
+    box-shadow: 5px 5px 5px gray;
+}
+.requirement-img{
+    width: 100%;
+    height: 60%;
+}
+.requirement-img img{
+    width: 100%;
+    height: 100%;
+}
+/*.....................*/
+.about-seller{
+    width: 100%;
+}
+/*.....................*/
+.rate{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.rating-star{
+    width: 100%;
+    display: flex;
+}
+.fa-star{
+    color: #035230;
+}
+.avg-star{
+    color: #035230;
+    width: 27%;
+}
+.average-star{
+    font-size: 120px;
+    padding: 0;
+    margin: 0;
+}
+.star{
+    font-size: 25px;
+    vertical-align: text-bottom;
+}
+.star-counter-wrapper{
+    width: 73%;
+    align-self: center;
+}
+.star-counter{
+    width: 100%;
+}
+.star-counter tr{
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.star-counter tr > td > i{
+    color: #035230;
+}
+.star-progress-bar{
+    width: 80%;
+    height: 14px;
+    display: flex;
+}
+.outer-bar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #72b194;
+}
+.inner-bar{
+    height: 100%;
+    background-color: #035230;
+}
+/*..............................*/
+.right-content{
+    position: sticky;
+    top: 30px;
+    height: fit-content;
+    width: 40%;
+    margin-top: 80px;
+    margin-left: 80px;
+    box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+    padding: 20px 20px 20px 20px;
+}
+.infor-seller{
+    display: flex;
+    border-bottom: 2px solid black;
+}
+.img-user{
+    width: 150px;
+    height: 200px;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+}
+.img-user img{
+    width: inherit;
+    height: 150px;
+    border-radius: 50%;
+}
+.contact-btn{
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid #72b194;
+    color: #72b194;
+    border-radius: 5px;
+    background-color: white;
+}
+.contact-btn:hover{
+    background-color: #72b194;
+    color: white;
+    text-decoration: none;
+}
+.contact-btn:focus{
+    outline: none;
+}
+.services-seller{
+    padding-top: 20px;
+}
+.price{
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1dbf73;
+    color: white;
+}
+.price:focus{
+    outline: none;
+}
+.say-sth{
+    border-bottom: 2px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.comment-form{
+    margin-top: 50px;
+}
+.message-left{
+    background: #E7FFC8;
+    border: 1px solid #0c0;
+    padding: 10px 10px 0px 10px;
+    margin-left: 15px;
+    position: relative;
+    border-radius: 6px;
+}
+.comment-form td:first-child{
+    width: 60px; 
+    vertical-align: top;
+}
+.comment-form img{
+    width: 60px; 
+    box-shadow: 0px 1px 2px #aaa;
+}
+.comment-text{
+    font-family: inherit; 
+    position: relative; 
+    display: block; 
+    width: 98%; 
+    width: calc(100% - 10px);
+}
+.comment-text:focus{
+    outline: none;
+}
+.btn-success{
+    margin-top: 10px;
+    margin-left: auto;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+    background-color: #035230;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff67e32a', endColorstr='#ff50c814', GradientType=0);
+    border-color: #51a351 #51a351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.pull-right {
+    padding-top: 10px;
+    float: right;
+}
+/*..........................................*/
+.comment-item{
+    display: flex;
+}
+.comment-avt img{
+    width: 60px; 
+    box-shadow: 0px 1px 2px #aaa;
+}
+.comment-item > div:last-child{
+    padding-left: 20px;
+}
+.info-comment a{
+    color: #035230;
+}
+.answer-btn{
+    font-size: 15px;
+    cursor: pointer;
+}
+.info-comment a:hover{
+    text-decoration: none;
+    color: #035230;
+}
+.time-comment{
+    font-size: 13px;
+}
+.sub-comment-wrapper{
+    margin-left: 80px;
+}
+.answer-form{
+    display: none;
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.answer-form input{
+    width: 80%;
+}
+.answer-form button{
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+    border: 2px solid #035230;
+    background-color: #035230;
+}

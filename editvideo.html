@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Tên Web</title>
+        <link rel="stylesheet" href="css/header.css"/>   
+        <link rel="stylesheet" href="css/subbar.css"/> 
+        <link rel="stylesheet" href="css/category.css"/>
+        <link rel="stylesheet" href="css/footer.css"/>
+        <!--awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <!--carousel-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--slick slider-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+        <link rel="stylesheet" href="css/slick-slide.css" />
+        <!--<link rel="shortcut icon" href="images/logo.png"/>
+        <meta name="viewport" content="width=device-width"> -->
+    </head>
+    <body>
+        <header>
+            <div id="top-header">
+                <div id="top-header-content">
+                    <div class="icon">
+                        <a href="index.html"><img src="images/logo.png"/></a>
+                    </div>
+                    <div class="right-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><b>THÔNG TIN</b></a>
+                            </li>
+                            <li>
+                                <a href="#"><b>HỖ TRỢ</b></a>
+                            </li>
+                            <li>
+                                <a href="#" id="search-item"><b><i class="fas fa-search"></b></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><b><i class="fas fa-comment"></b></i></a>
+                            </li>
+                            <li style="position: relative;" class="user">
+                                <a href="#"><b><i class="fas fa-user"></b></i></a>
+                                <div class="sub-user">
+                                    <a href="login.html">Đăng nhập/Đăng kí</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-popup">
+            <div class="search-content">
+                <h2 style="padding-bottom: 20px;">Bạn Cần Gì?</h2>
+                <div class="search-bar">
+                    <form action="" role="search" id="search" method="GET">
+                        <div class="search-inner">
+                            <input type="hidden" name="controller" value="homepage">
+                            <input type="text" name="key" placeholder="something..." required/>
+                            <button type="submit" class="search-btn" name="search"><i class="fas fa-search"></i></button>
+                        </div>
+                        <input type="hidden" name="action" value="search"/>
+                    </form>
+                </div>
+                <div class="popular">
+                    <form action="" role="search-popular" id="search-popular" method="GET">
+                        <button type="submit" name="action">Edit Video</button>
+                        <button type="submit" name="action">PhotoShop</button>
+                        <button type="submit" name="action">Web Design</button>
+                        <button type="submit" name="action">Logo Design</button>
+                    </form>
+                </div>
+            </div>
+            <i class="fas fa-times close-search"></i>
+        </div>
+        <div class="sub-bar">
+            <ul>
+                <li><a href="logodesign.html">Logo Design</a></li>
+                <li><a href="">Video Editing</a></li>
+                <li><a href="">Photoshop Images</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Web Design</a></li>
+                <li><a href="">Gaming</a></li>
+                <li><a href="">Writing</a></li>
+                <li><a href="">Student</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">Translation</a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="main-content">
+                <div class="layout-row">
+                    <div class="title">
+                        <h1>Video Editing</h1>
+                    </div>
+                </div>
+                <div class="filler-wrapper">
+                    <div class="filter">
+                        <div class="select">
+                            <p>Giá</p>
+                            <p><i class="fas fa-chevron-down arrow-down arrow-up" name="price"></i></p>
+                            <div class="sub-select" name="price">
+                                <form action="#">
+                                    <div class="filter-by-price">
+                                        <p style="border: none !important;">Lọc theo</p>
+                                        <div class="selection">
+                                            <input type="radio" name="price"/>
+                                            <span>1000 - 2000</span>
+                                        </div>
+                                        <div class="selection">
+                                            <input type="radio" name="price"/>
+                                            <span>2000 - 3000</span>
+                                        </div>
+                                    </div>
+                                    <div class="sort">
+                                        <p style="border: none !important;">Sắp xếp</p>
+                                        <div class="selection">
+                                            <input type="radio" name="sort"/>
+                                            <span>Tăng dần</span>
+                                        </div>
+                                        <div class="selection">
+                                            <input type="radio" name="sort"/>
+                                            <span>Giảm dần</span>
+                                        </div>                                
+                                    </div>
+                                    <button type="submit">Áp dụng</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="select">
+                            <p>Thời Gian Hoàn Thành</p>
+                            <p><i class="fas fa-chevron-down arrow-down arrow-up" name="delivery-time"></i></p>
+                            <div class="sub-select" name="delivery-time">
+                                <form action="#">
+                                    <div class="filter-by-time">
+                                        <div class="selection">
+                                            <input type="radio" name="time"/>
+                                            <span>24h</span>
+                                        </div>
+                                        <div class="selection">
+                                            <input type="radio" name="time"/>
+                                            <span>7 days</span>
+                                        </div>
+                                        <div class="selection">
+                                            <input type="radio" name="time"/>
+                                            <span>30 days</span>
+                                        </div>
+                                    </div>
+                                    <button type="submit">Apply</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="content">
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/video-editing-1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Minh Triều</span></a>
+                                    <i>Editor</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>Tôi sẽ giúp bạn tạo có được video mong muốn với mức giá hợp lí</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Video Editing</a>
+                                <i>Giá: 150.000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/video-2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Minh Đăng</span></a>
+                                    <i>Editor</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>Đảm bảo thiết kế đúng theo yêu và thời gian</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">LVideo Editing</a>
+                                <i>Giá: 180.000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/video3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Nhã Nguyễn</span></a>
+                                    <i>Editor</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>Tôi sẽ giúp video của bạn trở nên chuyên nghiệp và hoàn thiện hơn</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Video Editing</a>
+                                <i>Giá: 100.000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Trong Bùi</span></a>
+                                    <i>Editor</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>Tin tưởng ở tôi, bạn sẽ hài lòng với video tôi tạo ra</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Video Editing</a>
+                                <i>Giá: 180.000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/video5.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Minh Hiếu</span></a>
+                                    <i>Editor</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Video Editing</a>
+                                <i>Giá: 190.000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Anh Thư</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Video Editing</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/video6.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Hoài Tuân</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/video7.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>Diễm Quỳnh</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product3.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product2.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product4.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="image">
+                                <a href="#"><img style="width: 100%; height: 100%" src="images/product1.jpg"/></a>
+                            </div>
+                            <div class="user">
+                                <img src="images/kim.jpg"/>
+                                <div>
+                                    <a href="#"><span>kimsohuyn</span></a>
+                                    <i>Designer</i>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <a href="#" style="display: block;">
+                                    <span>I will design 3 modern minimalist logo design in 24 hours</span>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                                <a href="">Logo Design</a>
+                                <i>Cost: 1000vnd</i>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example" style="margin-right: 130px;">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                    </nav>
+                    <!-------------------------------->
+                    <div style="height: 1px;background-color:#85878a;width: 90%;margin-left: auto;margin-right: auto;margin-top: 50px;"></div>
+                    <div class="orther-service">
+                        <h1>Danh mục khác</h1>
+                        <div class="services">
+                            <div class="service-container">
+                                <div>
+                                    <a href="#"><i class="fas fa-photo-video"></i></a>
+                                    <h5>Video Editing</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="far fa-images"></i></a>
+                                    <h5>Photoshop Images</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fab fa-itunes"></i></a>
+                                    <h5>Music</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fas fa-laptop-code"></i></a>
+                                    <h5>Web Design</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fas fa-gamepad"></i></a>
+                                    <h5>Gaming</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fas fa-newspaper"></i></a>
+                                    <h5>Writing</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fas fa-user-graduate"></i></a>
+                                    <h5>Student</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="far fa-file-code"></i></a>
+                                    <h5>Coding</h5>
+                                </div>
+                                <div>
+                                    <a href="#"><i class="fas fa-language"></i></a>
+                                    <h5>Translation</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 1px;background-color:#85878a;width: 90%;margin-left: auto;margin-right: auto;"></div>
+            </div>
+        </section>
+        <footer>
+            <div class="social">
+                <label>Kết Nối Với Chúng Tôi</label>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="">
+
+            </div>
+            <div class="main-footer">
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <h4 style="display: inline-block;">Địa Chỉ</h4>
+                            <p>371 Nguyễn Kiệm phường 3 Gò Vấp TP.HCM</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-square"></i>
+                            <h4 style="display: inline-block;">Số Điện Thoại</h4>
+                            <p>0339141598</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <h4 style="display: inline-block;">EMail</h4>
+                            <p>anhhungcodon@gmai.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label>GIỜ LÀM VIỆC</label>
+                    <ul>
+                        <li>Monday: 09:00-17:00</li>
+                        <li>Tuesday: 09:00-17:00</li>
+                        <li>Wednesday: 09:00-17:00</li>
+                        <li>Thursday: 09:00-17:00</li>
+                        <li>Friday: 09:00-17:00</li>
+                        <li>Saturday: 09:00-17:00</li>
+                    </ul>
+                </div>
+                <div>
+                    <label>VỀ CHÚNG TÔI</label>
+                     <ul>
+                         <li><a href="">Giới thiệu</a></li>
+                         <li><a href="">Liên hệ</a></li>
+                         <li><a href="">Tuyển dụng</a></li>
+                         <li><a href="">Tin tức</a></li>
+                         <li><a href="">Chính sách bảo mật</a></li>
+                     </ul>
+                 </div>
+                 <div>
+                     <label>ĐĂNG KÍ NHẬN TIN</label>
+                     <span style="display: block;padding-top: 10px">
+                        Chúng tôi sẽ gửi những thông báo mới nhất cho bạn về những ưu đãi hoặc các sự kiện đặc biệt
+                        <div class="email">
+                            <input type="email" placeholder="Nhập email của bạn"/>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                     </span>
+                 </div>
+            </div>
+            <div class="end-footer">
+                <div class="wrapper-end-footer">
+                    <span>FARMERS</span>
+                    <span>&#169; Farmer Company 2021</span>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/category.js"></script>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+.main-content{
+    margin-top: 20px;
+}
+.layout-row{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.layout-row > div{
+    line-height: 80px;
+    position: relative;
+}
+.layout-row b{
+    padding: 0 10px 0 0;
+}
+.layout-row b > a{
+    text-decoration: none;
+    color: black;
+}
+.layout-row b > a:nth-child():hover .underline{
+    left: 100px;
+}
+.underline{
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 63px;
+    height: 5px;
+    background-color: #1dbf73;
+    transition: all .2s ease-in-out;
+}
+.active{
+    left: 6%;
+}
+/*..............................*/
+.filter{
+    margin: 40px 60px;
+    display: flex;
+}
+.select{
+    display: flex;
+    padding-right: 10px;
+    position: relative;
+}
+.select p{
+    border: 1px solid #dadbdd;
+    padding: 5px 10px;
+    margin: 0;
+}
+.arrow-down{
+    transform: rotateX(0deg) !important;
+}
+.arrow-up{
+    transition: all .2s ease-in-out;
+    transform: rotateX(180deg);
+}
+/**************************************/
+.sub-select{
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+    border: 1px solid #dadbdd;
+    width: fit-content;
+}
+.selection{
+    padding: 10px 20px;
+    width: 300px;
+}
+.selection input{
+    display: inline-block;
+    padding-left: 20px;
+}
+.sub-select button[type="submit"]{
+    display: block;
+    margin-left: auto;
+    background-color: #1dbf73;
+    border: none;
+    outline: none;
+    border-radius: 10%;
+    color: white;
+}
+.sub-select button[type="submit"]:focus{
+    border: none;
+    outline: none;
+}   
+/***********************************/
+.content{
+    margin: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.content>div{
+    width: 22%;
+    height: 350px;
+    margin: 15px 15px;
+    border: 1px solid #dadbdd;
+}
+.image{
+    width: 100%;
+    height: 200px;
+    margin: 0;
+}
+.image:hover + .infor a{
+    text-decoration: none;
+    color: #1dbf73;
+}
+.user{
+    display: flex;
+    margin: 10px;
+    height: 10%;
+    align-items: center;
+}
+.user img{
+    width: 12%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.user div > a{
+    color: #1dbf73;
+}
+.user div > i{
+    font-size: 13px;
+}
+.desc{
+    word-break: break-word;
+    word-wrap: break-word;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 10px 0 10px;
+    height: 17%;
+}
+.desc a{
+    text-decoration: none;
+    color: black;
+}
+.desc a:hover{
+    text-decoration: none;
+    color: #1dbf73;
+}
+.bottom{
+    border-top: 1px solid #dadbdd;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom a{
+    color: #1dbf73;
+    font-size: 13px;
+    border: 1px solid #1dbf73;
+    background-color: #c1f3dc;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bottom i{
+    color: #85878a;
+}
+/*******************************************/
+.orther-service{
+    margin: 40px 50px;
+    margin-bottom: 0 !important;
+}
+nav.navigation{
+    margin-right: 80px !important;
+}   
+.services{
+    padding: 0 60px 50px 60px;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+.service-container div{
+    width: 20%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.service-container div > a{
+    width: 20%;
+    border-bottom: 2px solid #c5c6c9;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.service-container div > a:hover{
+    width: 90px;
+    border-bottom: 2px solid #1dbf73;
+}
+.service-container div > a > i{
+    font-size: 35px;
+    padding-bottom: 10px;
+    color: #035230;
+}
+.service-container div > h5{
+    padding-top: 10px;
+    font-size: 18px;
+}

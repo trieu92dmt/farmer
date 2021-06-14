@@ -1,0 +1,142 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+section{
+    background-color: white;
+    margin: 50px 80px;
+    display: flex !important;
+}
+.left-content{
+    margin-top: 20px;
+    width: 20%;
+}
+.right-content{
+    width: 70%;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+label{
+    font-weight: bold;
+}
+.list{
+    line-height: 35px;
+}
+.list a{
+    color: #7a7d85;
+}
+.list a:hover{
+    color: #7a7d85;
+}
+.rent-cost a{
+    color: #7a7d85;
+    display: block;
+    margin: 10px;
+}
+.rent-cost a:hover{
+    color: #7a7d85;
+}
+.main-label{
+    text-align: center;
+    margin-top: 40px;
+}
+.right-content{
+    border: 1px solid #1dbf73;
+    height: fit-content;
+}
+.right-content > .top{
+    display: flex;
+}
+.top li{
+    padding: 20px;
+    width: 25%;
+    text-align: center;
+}
+.top li:last-child{
+    width: 50% !important;
+}
+/*............................*/
+.inner-form{
+    display: flex;
+    width: 100%;
+}
+.inner-form > .first-wrap{
+    width: 100%;
+}
+.inner-form > .first-wrap > input{
+    width: 100%;
+}
+.inner-form > .second-wrap > button{
+    background-color: #1dbf73;
+    border: 2px solid #1dbf73;
+    color: white;
+}
+.inner-form > .second-wrap > button:focus{
+    outline: none;
+}
+#search{
+    padding-left: 10px;
+}
+.top{
+    border-bottom: 1px solid #1dbf73;
+}
+.top li{
+    cursor: pointer;
+    font-weight: bold;
+}
+.top li:nth-child(2):hover{
+    background-color: #1dbf73;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    color: white;
+}
+.top li:first-child{
+    border-left: none;
+}
+.active{
+    background-color: #1dbf73;
+    color: white;
+}
+/*.................................*/
+.request-item{
+    height: fit-content;
+    padding: 20px;
+    border-top: 1px solid #1dbf73;
+    border-bottom: 1px solid #1dbf73;
+}
+.info-user{
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-user img{
+    width: 8%;
+    height: 100%;
+    border-radius: 50%;
+}
+.username{
+    padding-left: 10px;
+}
+.tools{
+    font-size: 25px;
+}
+.tools span{
+    padding: 10px;
+}
+.desc{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cate{
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #1dbf73;
+    background-color: #c1f3dc;
+    color: #1dbf73;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}

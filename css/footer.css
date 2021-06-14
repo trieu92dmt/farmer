@@ -1,0 +1,92 @@
+footer{
+    background-color: whitesmoke;
+    background-repeat: repeat;
+    background-image: url(/images/footer-bg.jpg);
+    width: 100%;
+    height: 600px;
+    color: #babbbe;
+    padding: 10px 0px 10px 0px;
+    margin-top: 100px;
+}   
+.social{
+    width: 100%;
+    text-align: center;
+}
+.social > label{
+    font-size: 30px;
+    padding: 10px;
+}
+.social > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 40%;
+    margin: auto;
+}
+.social > ul li{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social > ul li > a{
+    color: black;
+    font-size: 30px;
+}
+ul{
+    list-style: none;
+}
+.main-footer li{
+    padding-top: 10px;
+}
+.main-footer li > a{
+    color: #babbbe;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 100px;
+    border-bottom: 1px solid #babbbe;
+}
+.main-footer >div{
+    width: 25%;
+    padding: 20px;
+}
+.main-footer ul{
+    padding: 0;
+}
+.email{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.email > input{
+    border: none;
+    outline: 0;
+    width: 78%;
+}
+.email > button{
+    width: 20%;
+    background-color: #1dbf73;
+    color: white;
+    border: none;
+    outline: 0;
+}
+.wrapper-end-footer{
+    text-align: center;
+    padding-top: 20px;
+}
+.wrapper-end-footer > span:first-child{
+    font-size: 30px;
+    color: #1dbf73;
+    width: 100%;
+    height: 100%;
+}
+.wrapper-end-footer > span:last-child{
+    padding-left: 20px;
+}

@@ -1,0 +1,379 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #035230;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    border-bottom: 1px white solid;
+    transition: all 0.5s ease-in-out;
+}
+#top-header{
+    top: 0;
+    width: 100%;
+    height: 80px; 
+}
+#top-header-content{
+    margin:0 60px 0 60px;
+    height: 100%;
+    display: flex;
+}
+.icon{
+    position: relative;
+    height: 85%;
+    width: 200px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.icon > a{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 200px;
+    border-radius: 20px;
+    margin: auto;
+}
+.icon > a > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.right-menu{
+    width: 30%;
+    margin-left: auto;
+    height: 100%;   
+}
+.right-menu > ul
+{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+}
+.right-menu > ul > li{
+    text-align: center;
+    width: 20%;
+    line-height: 80px;
+}
+.right-menu > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+/*-----------------------------------------*/
+.scroll{
+    background-color: white;
+    border-bottom: 1px gray solid;
+}
+.scroll ul li a{
+    color: #035230;
+}
+/*-----------------------------------------*/
+.search-popup{
+    position: absolute;
+    top: 0;
+    background-color: #2b2828ad;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+}
+.search-content{
+    top: 100px;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    position: absolute;
+    padding-top: 50px;
+    color: white;
+}
+form[role="search"]{
+    position: relative;
+    width: 80%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 30px;
+}
+.search-inner{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+input[name="search"]{
+    width: 80%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+}
+.search-btn{
+    border: 0;
+    position: absolute;
+    outline: 0;
+    top: 10%;
+    left: 15px;
+    max-width: 50px;
+    height: 80%;
+    font-size: 20px;
+    background-color: white;
+}
+.search-btn:focus{
+    outline: 0;
+}
+.close-search{
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+}
+/*-----------------------------------------*/
+.popular button{
+    padding: 5px 8px 5px 8px;
+    margin: 12px;
+    border: 1px solid #1dbf73;
+    outline: 0;
+    border-radius: 30px;
+    background-color: #1dbf73;
+    color: white;
+    font-size: 13px;
+}
+.popular button:hover{
+    border: 1px solid #1dbf73;
+    background-color: white;
+    color: #1dbf73;
+    outline: 0;
+}
+.popular button:focus{
+    outline: none;
+}
+/*-----------------------------------------*/ 
+nav{
+    width: 100%;
+    margin: 0;
+    height: 600px;
+    background-color: #035230;
+}
+.nav-inner{
+    width: 100%;
+    display: flex;
+}
+.main-header-content{
+    width: 50%;
+    height: 400px;
+    color: white;
+}
+.main-header-content > div{
+    padding-top: 140px;
+    text-align: center;
+    line-height: 40px;
+}
+.main-header-content h1{
+    font-family: cursive !important;
+}
+.main-header-content > div > a{
+    color: white;
+    width: 33%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    display: block;
+    background-color: #1dbf73;
+    border-radius: 30px;
+    box-shadow: 5px 5px black;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.main-header-content > div > a:hover{
+    background-color: white;
+    color: #035230;
+}
+/*........................................*/
+.slider{
+    width: 50%;
+    height: 400px;
+}
+.sliders{
+    margin: 100px 100px 100px 50px;
+    width: 80%;
+    height: 100%;
+}
+#slider-animation{
+    width: 100%;
+    height: 100%;
+}
+#slider-animation .carousel-inner{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px 10px #373b3aad;
+}
+#slider-animation .carousel-inner div{
+    width: 100%;
+    height: 100%;
+}
+#slider-animation .carousel-inner div img{
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------------------*/
+section{
+    height: 700px;
+}
+.services{
+    padding: 50px 60px 50px 60px;
+}
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.service-container div{
+    width: 20%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.service-container div > a{
+    width: 20%;
+    border-bottom: 2px solid #c5c6c9;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+.service-container div > a:hover{
+    width: 90px;
+    border-bottom: 2px solid #1dbf73;
+}
+.service-container div > a > i{
+    font-size: 35px;
+    padding-bottom: 10px;
+    color: #035230;
+}
+.service-container div > h5{
+    padding-top: 10px;
+    font-size: 18px;
+}
+/*-------------------------------------------*/
+.banner-1{
+    background-color: #00af63ad;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 100px 50px 0 0;
+}
+.banner-1 > .image-banner-1{
+    width: 50%;
+    height: 400px;
+    text-align: center;
+}
+.banner-1 > .image-banner-1 > img{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 0 10px 10px #373b3aad;
+}
+.banner-1 > .content-banner-1{
+    padding-left: 50px;
+    width: 50%;
+    text-align: left;
+    color: white;
+}
+/*-----------------------------------------*/
+.product{
+    height: 550px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #f5f5f5;
+    display: flex;
+}
+.product-item{
+    text-align: center;
+    width: 25%;
+    height: 320px !important;
+    background-color: white;
+    margin: 15px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+}
+.product-img{
+    width: 100%;
+    height: 80%;
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.thumnail{
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding-top: 10px;
+}
+.thumnail > div{
+    word-break: break-word;
+    word-wrap: break-word;
+    line-height: 24px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 70%;
+}
+.slick-list{
+    height: 100%;
+}
+.slick-track{
+    display: flex;
+}
+.slick-slide{
+    background-color: white;
+    margin: 15px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 5px;
+}
+.slick-arrow{
+    background-color: white;
+}
+/*----------------------------------*/
+.requirements{
+    height: 550px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.requirement-product > div{
+    margin-bottom: 25px;
+}
+.requirement-sliders{
+    padding: 0 0 10px 0;
+}
+.requirement{
+    text-align: center;
+    height: 400px !important;
+}
+.requirement-img{
+    width: 100%;
+    height: 60%;
+}
+.requirement-img img{
+    width: 100%;
+    height: 100%;
+}
